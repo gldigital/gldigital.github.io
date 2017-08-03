@@ -220,7 +220,7 @@ input[type=submit]:hover {
 /*Portfolio Page*/
 
 .img-1 {
-  background: url("file:///C:/Users/Greg/Desktop/Bootcamp/Week-1/Basic-Portfolio/assets/images/pf-1.jpg");
+  background: url("/assets/images/pf-1.jpg");
   background-repeat: repeat;
   width: 250px;
   height: 250px;
@@ -229,7 +229,7 @@ input[type=submit]:hover {
 }
 
 .img-2 {
-  background: url("file:///C:/Users/Greg/Desktop/Bootcamp/Week-1/Basic-Portfolio/assets/images/pf-2.jpg");
+  background: url("/assets/images/pf-2.jpg");
   background-repeat: repeat;
   width: 250px;
   height: 250px;
@@ -238,7 +238,7 @@ input[type=submit]:hover {
 }
 
 .img-3 {
-  background: url("file:///C:/Users/Greg/Desktop/Bootcamp/Week-1/Basic-Portfolio/assets/images/pf-3.jpg");
+  background: url("/assets/images/pf-3.jpg");
   background-repeat: repeat;
   width: 250px;
   height: 250px;
@@ -247,7 +247,7 @@ input[type=submit]:hover {
 }
 
 .img-4 {
-  background: url("file:///C:/Users/Greg/Desktop/Bootcamp/Week-1/Basic-Portfolio/assets/images/pf-4.jpg");
+  background: url("/assets/images/pf-4.jpg");
   background-repeat: repeat;
   width: 250px;
   height: 250px;
@@ -256,7 +256,7 @@ input[type=submit]:hover {
 }
 
 .img-5 {
-  background: url("file:///C:/Users/Greg/Desktop/Bootcamp/Week-1/Basic-Portfolio/assets/images/pf-5.jpg");
+  background: url("/assets/images/pf-5.jpg");
   background-repeat: repeat;
   width: 250px;
   height: 250px;
