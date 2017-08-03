@@ -220,7 +220,7 @@ input[type=submit]:hover {
 /*Portfolio Page*/
 
 .img-1 {
-  background: url("pf-1.jpg");
+  background: url("/assets/images/pf-1.jpg");
   background-repeat: repeat;
   width: 250px;
   height: 250px;
@@ -229,7 +229,7 @@ input[type=submit]:hover {
 }
 
 .img-2 {
-  background: url("/pf-2.jpg");
+  background: url("/assets/images/pf-2.jpg");
   background-repeat: repeat;
   width: 250px;
   height: 250px;
