@@ -138,6 +138,11 @@ header #branding h1{
   font-size: 20px;
 }
 
+header #branding:hover{
+  background: #55c1bc;
+
+}
+
 header nav {
   float: right;
   margin: 0px;
