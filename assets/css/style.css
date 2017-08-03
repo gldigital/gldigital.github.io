@@ -170,7 +170,7 @@ header a:hover{
 
 label {
   font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif  !important;
-  color: #777;
+  color: rgba(74, 170, 165, 0.75);
   font-size: 15px !important;
   padding: 5px;
 }
