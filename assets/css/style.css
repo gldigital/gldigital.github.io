@@ -200,7 +200,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: #4aaaa5;
+    background-color: #55c1bc;
 }
 
 /* Socials*/
@@ -265,7 +265,7 @@ input[type=submit]:hover {
 }
 
 .img-label {
-  background-color: rgba(74, 170, 165, 0.75);
+  background-color: rgba(74, 170, 165, 0.80);
   width: 250px;
   height: 70px;
   position: relative;
