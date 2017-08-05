@@ -335,22 +335,4 @@ input[type=submit]:hover {
       width: 100%;
     }
 
-    header li {
-      padding: 10px 20px;
-      border-right: 1px #ccc solid;
-    }
-  .content,
-  .sidebar {
-    width: 100%;
-    margin-left: 15px;
-    margin-right: 15px;
-    float: none;
-  }
-  .socials {
-    text-align: center;
-  }
-  .img {
-    width: 100%;
-    padding: 10px 10px;
-  }
 }
