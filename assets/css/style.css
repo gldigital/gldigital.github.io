@@ -300,10 +300,18 @@ input[type=submit]:hover {
 
 @media only screen and (max-width: 768px) {
 
-
+  .content,
+  .sidebar {
+    width: 93%;
+  }
+  
 }
 
 @media only screen and (max-width: 640px) {
 
+  .content,
+  .sidebar {
+    width: 93%;
+  }
 
 }
