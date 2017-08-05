@@ -294,36 +294,16 @@ input[type=submit]:hover {
 /* Media Queries */
 
 @media only screen and (max-width: 980px) {
-    /* For desktop: */
-    .container {width: 100%}
+
+
   }
 
 @media only screen and (max-width: 768px) {
-    /* For desktop: */
-    header #branding,
-    header nav,
-    header nav li,
-     {
-      float: none;
-      text-align: center;
-      width: 100%;
-      position: static;
-    }
-    .container {width: 100%}
-  }
 
+
+}
 
 @media only screen and (max-width: 640px) {
-    /* For desktop: */
-    header #branding,
-    header nav,
-    header nav li
-     {
-      float: none;
-      text-align: center;
-      width: 100%;
-      position: static;
-    }
-    .container {width: 100%}
+
 
 }
