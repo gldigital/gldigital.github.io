@@ -324,7 +324,7 @@ input[type=submit]:hover {
       padding: 10px 10px;
     }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 480px) {
     /* For desktop: */
     header #branding,
     header nav,
@@ -336,7 +336,7 @@ input[type=submit]:hover {
     }
 
     header li {
-      padding: 10px 30px;
+      padding: 10px 20px;
       border-right: 1px #ccc solid;
     }
   .content,
