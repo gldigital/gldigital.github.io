@@ -304,7 +304,11 @@ input[type=submit]:hover {
   .sidebar {
     width: 93%;
   }
-  
+  header #branding,
+  header li,
+  header nav {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 640px) {
@@ -313,5 +317,9 @@ input[type=submit]:hover {
   .sidebar {
     width: 93%;
   }
-
+  header #branding,
+  header li,
+  header nav {
+    width: 100%;
+  }
 }
