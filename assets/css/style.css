@@ -306,23 +306,9 @@ input[type=submit]:hover {
       float: none;
       text-align: center;
       width: 100%;
+      position: static;
     }
 
-    .content,
-    .sidebar {
-      width: 100%;
-      margin-left: 100px;
-
-      float: none;
-    }
-    .socials {
-      text-align: center;
-    }
-    .img {
-      width: 100%;
-      text-align: center;
-      padding: 10px 10px;
-    }
 
 @media only screen and (max-width: 640px) {
     /* For desktop: */
@@ -332,7 +318,7 @@ input[type=submit]:hover {
      {
       float: none;
       text-align: center;
-      width: 100% auto;
+      width: 100%;
       position: static;
     }
 
