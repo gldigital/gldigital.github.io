@@ -332,7 +332,7 @@ input[type=submit]:hover {
      {
       float: none;
       text-align: center;
-      width: 100%;
+      width: 100% auto;
     }
 
 }
