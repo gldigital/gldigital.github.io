@@ -296,6 +296,7 @@ input[type=submit]:hover {
 @media only screen and (max-width: 980px) {
     /* For desktop: */
     .container {width: 100%}
+  }
 
 @media only screen and (max-width: 768px) {
     /* For desktop: */
@@ -308,6 +309,8 @@ input[type=submit]:hover {
       width: 100%;
       position: static;
     }
+    .container {width: 100%}
+  }
 
 
 @media only screen and (max-width: 640px) {
@@ -321,5 +324,6 @@ input[type=submit]:hover {
       width: 100%;
       position: static;
     }
+    .container {width: 100%}
 
 }
