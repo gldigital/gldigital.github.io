@@ -292,34 +292,65 @@ input[type=submit]:hover {
 }
 
 /* Media Queries */
-
 @media only screen and (max-width: 980px) {
-
+    .container {
+        width: 100%;
+    }
 
   }
 
 @media only screen and (max-width: 768px) {
 
-  .content,
-  .sidebar {
-    width: 93%;
-  }
-  header #branding,
-  header li,
-  header nav {
+    header #branding {
+        margin-left: 20px;
+    }
+    .container {
     width: 100%;
+    }
+    .content,
+    .sidebar {
+    width: 93%;
+
+    margin: 15px;
   }
+    .socials {
+        text-align: center;
+    }
+
 }
 
 @media only screen and (max-width: 640px) {
 
-  .content,
-  .sidebar {
+    header nav,
+    header nav li{
+        max-width: 100%;
+        margin-left: 0px;
+        text-align: center;
+        float: none;
+    }
+
+    header #branding {
+        width: 85%;
+        margin-left: 0px;
+        text-align: center;
+        float: none;
+    }
+
+    .container {
+    max-width: 100%;
+    }
+    .content,
+    .sidebar {
     width: 93%;
+
+    margin: 15px;
   }
-  header #branding,
-  header li,
-  header nav {
-    width: 100%;
-  }
+    .socials {
+        text-align: center;
+    }
+
+    .img {
+        width: 93%;
+        margin-right: 10px;
+    }
 }
