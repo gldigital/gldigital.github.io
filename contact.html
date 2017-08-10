@@ -1,76 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width" />
-  <title>Basic Portfolio</title>
-  <link rel="stylesheet" href="assets/css/reset.css">
-  <link rel="stylesheet" href="assets/css/style.css">
-
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
 <body>
 
-  <header>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+               <span class="sr-only">Toggle navigation</span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+             </button>
+                <a class="navbar-brand" href="/index.html">Greg Ladden</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/index.html">About</a></li>
+                    <li><a href="/portfolio.html">Portfolio</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <div class="container">
-      <div id="branding">
-        <a href="/index.html"><h1>Greg Ladden</h1></a>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="/index.html">About</a></li>
-          <li><a href="/portfolio.html">Portfolio</a></li>
-          <li><a href="/contact.html">Contact</a></li>
-        </ul>
-      </nav>
+        <div class="calc-height">
+        <div class="row">
+            <div class="col-md-8 content">
+                <h1>Contact Me</h1>
+                <hr>
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Name</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleTextarea">Questions or Comments</label>
+                        <textarea class="form-control" id="exampleTextarea" rows="3" placeholder="Start Typing..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Now</button>
+                </form>
+            </div>
+            <div class="col-md-3 sidebar">
+                <h2>Connect With Me</h2>
+                <hr>
+                <div class="socials">
+                    <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMVofxkPmsP8yt6HGgzL5k7YLN-lDQcScKrk1MsMEHeP3Lyqkq" class="sc-img"alt="github logo"></a>
+                    <a href="#"><img src="http://www.freeiconspng.com/uploads/-more-related-linkedin-vector-icon-vector-logos-linkedin-vector-logo-23.png" class="sc-img" alt="linkedin logo"></a>
+                    <a href="#"><img src="http://www.freeiconspng.com/uploads/twitter-icon-download-18.png" class="sc-img" alt="twitter logo"></a>
+                </div>
+            </div>
+        </div>
     </div>
-  </header>
-
-  <!-- End oF Header -->
-  <!-- Start of Content Area  -->
-
-
-    <div class="container">
-      <div class="content">
-      <h1>Contact Me</h1>
-      <div class="form">
-        <form action="/action_page.php">
-
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" placeholder="Your Name ...">
-
-          <label for="email">Email</label>
-          <input type="text" id="email" name="email" placeholder="Your Email...">
-
-          <label for="Message">Message</label>
-          <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
-
-          <input type="submit" value="Submit">
-
-        </form>
-      </div>
     </div>
-  </div>
-
-  <!-- End of Content Area  -->
-  <!-- Start of Sidebar  and Footer -->
-
-  <div class="container">
-  <div class="sidebar clearfix">
-    <h2>Connect With me</h2>
-    <div class="socials">
-      <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMVofxkPmsP8yt6HGgzL5k7YLN-lDQcScKrk1MsMEHeP3Lyqkq" class="sc-img"alt="github logo"></a>
-      <a href="#"><img src="http://www.freeiconspng.com/uploads/-more-related-linkedin-vector-icon-vector-logos-linkedin-vector-logo-23.png" class="sc-img" alt="linkedin logo"></a>
-      <a href="#"><img src="http://www.freeiconspng.com/uploads/twitter-icon-download-18.png" class="sc-img" alt="twitter logo"></a>
-  </div>
-</div>
-</div>
-
-  <footer id="footer-1">
-    <p>&copy; 2017 Greg Ladden</p>
-  </footer>
-
+    <footer id="footer-1">
+        <p>&copy; 2017 Greg Ladden</p>
+    </footer>
 </body>
 
 </html>
