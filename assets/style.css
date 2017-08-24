@@ -1,0 +1,52 @@
+
+.crystal-image {
+    width: 275px;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.crystal-image:hover {
+    filter:drop-shadow(8px 8px 10px red);
+}
+
+/* .crystal-image1:hover {
+    filter:drop-shadow(8px 8px 10px red);
+}
+.crystal-image2:hover {
+    filter:drop-shadow(8px 8px 10px #3200FF);
+}
+.crystal-image3:hover {
+    filter:drop-shadow(8px 8px 10px #FF00E1);
+}
+.crystal-image4:hover {
+    filter:drop-shadow(8px 8px 10px #B7FF00);
+} */
+
+.theRules {
+    background: black;
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 30px 20px;
+}
+
+.theRules h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.fa, .fa-check-square {
+    padding-right: 10px;
+    font-size: 22px;
+}
+
+.refImg img {
+    width: 400px;
+    height: auto;
+}
+
+.list-group-item {
+    font-size: 16px;
+}

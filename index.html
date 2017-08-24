@@ -1,87 +1,142 @@
+
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Crystal Game</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/style.css">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Jquery -->
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="  crossorigin="anonymous"></script>
 
-    <title>NFL Hangman</title>
-
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-</head>
-
-<body>
-
-    <nav class="navbar navbar-default">
-        <div class="navbar-header center-block">
-                <img src="https://s-media-cache-ak0.pinimg.com/originals/8b/db/14/8bdb1401ebfffd2c133358ceec78b7c3.jpg" alt="">
-        </div>
+    </head>
+    <body>
+        
+    
+    <nav class="navbar navbar-default" role="navigation">
+         <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Crystal Game</a>
+            </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#rules">Rules</a></li>
+                    <li><a class="New-Game" href="#">New Game</a></li>
+                </ul>
+         </div>
     </nav>
 
     <div class="container">
+
+        <!-- Panels for Number to guess and user score -->
         <div class="row">
-            <div class="col-md-12">
-                <h1>NFL Hangman</h1>
+            <div class="col-md-6">
+                <div class="panel panel-danger">
+                      <div class="panel-heading">
+                            <h3 class="panel-title text-center">Number To Guess</h3>
+                      </div>
+                      <div class="panel-body text-center">
+                           <span id="number-to-guess"></span>
+                      </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                    <div class="panel panel-danger">
+                          <div class="panel-heading">
+                                <h3 class="panel-title text-center">Your Amount</h3>
+                          </div>
+                          <div class="panel-body text-center">
+                                <span id="userTotal"></span>
+                          </div>
+                    </div>
+                </div>
+        </div>
+
+        <!-- Layout crystals -->
+        <div class="row">
+                <div id="crystals">
+            <!-- Please disregard for class. Plan on practicing with this later this weekend -->
+            <!-- <div class="col-md-3">
+                <img class="crystal-image1" id="crystals" src="assets/img/crystal.png" alt="">
+            </div>
+            <div class="col-md-3">
+                <img class="crystal-image2" src="assets/img/crystal.png" alt="">
+             </div>
+             <div class="col-md-3">
+                <img class="crystal-image3" src="assets/img/crystal.png" alt="">
+            </div>
+            <div class="col-md-3">
+                <img class="crystal-image4" src="assets/img/crystal.png" alt=""> -->
             </div>
         </div>
+
+        <!-- Panels to keep track of wins and losses -->
         <div class="row">
-            <div class="col-md-12">
-                <p class="text-center">Try and guess the best NFL Teams EVER!</p>
-                <br>
-            </div>
+            <div class="col-md-6">
+                <div class="panel panel-danger">
+                    <div class="panel-heading">
+                        <h3 class="panel-title text-center">Wins</h3>
+                    </div>
+                    <div class="panel-body text-center">
+                            <span id="userWins"></span>
+                    </div>
+                </div>
+            </div>  
+            <div class="col-md-6">  
+                <div class="panel panel-danger">
+                    <div class="panel-heading">
+                        <h3 class="panel-title text-center">Losses</h3>
+                    </div>
+                    <div class="panel-body text-center">
+                        <span id="userLoses"></span>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>
+
+    <!-- Rules Section -->
+    <div class="container-fluid">
+        <div class="theRules" id="rules">
+            <h1>The Rules</h1>
         </div>
     </div>
     <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1 id="word" align="center"></h1>
-                    <br>
-                    <br>
-                    <h2 id="gamestatus"> </h2>
-                </div>
-            </div>
-        </div>
-
-    <div class="container-fluid box">
         <div class="row">
-            <div class="col-md-4">
-                <div class="boxes">
-                    <h3>Your Guess</h3>
-                    <p id="letterguess">-</p>
+            <div class="col-md-6">
+                <div class="refImg">
+                    <img src="https://image.flaticon.com/icons/svg/26/26708.svg" alt="">
                 </div>
             </div>
-
-            <div class="col-md-4">
-                <div class="boxes">
-                <h3>Remaining Guesses</h3>
-                <p id="badguess"></p>
-            </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="boxes">
-                <h3>Total Wins</h3>
-                <p id="won"></p>
-            </div>
+            <div class="col-md-6">
+                <h2>How To Play</h2>
+                <hr>
+                <div class="list-group">
+                    <a class="list-group-item"><i class="fa fa-check-square fa-lg" aria-hidden="true"></i>You will be given a random number at the beginning of the game.</a>
+                    <a class="list-group-item"><i class="fa fa-check-square fa-lg" aria-hidden="true"></i>There are 4 crystals above. By clicking on a crystal you will be adding a specific amount of points to your total score.</a>
+                    <a class="list-group-item"><i class="fa fa-check-square fa-lg" aria-hidden="true"></i>You win the game by matching your total score to the random number chosen. You lose the game if your score goes above the random number chosen.</a>                    
+                    <a class="list-group-item"><i class="fa fa-check-square fa-lg" aria-hidden="true"></i>Each time a new game starts, each crystal will have a different value.</a>
+                </div>
             </div>
         </div>
     </div>
-
-    <div class="footer">
-        <div class="container">
-            <p class="text-center" style="padding-top: 30px;">&copy; Greg Ladden</p>
-        </div>
-    </div>
-
-
-        <!-- jQuery CDN -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <!-- Bootstrap JavaScript CDN -->
+        <!-- JAVASCRIPT  -->
+        <!-- ========================================= -->
+        <script src="assets/game.js"></script>
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Bootstrap JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <!-- my JavaScript File  -->
-        <script type="text/javascript" src="js/game.js"></script>
-
-</body>
-
+    </body>
 </html>
