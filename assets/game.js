@@ -81,17 +81,7 @@ function play() {
 
     });
 
-} // End of Play Function 
-
-function reset() {
-    
-        $(".reset").on("click", function() {
-
-        startGame();
-    
-    });
-}
-// End of reset function 
+} // End of Play Function  
 
 function newGame() {
 
@@ -116,7 +106,6 @@ function newGame() {
 
     startGame();
     play();
-    reset();
     newGame();
 
 }); 
