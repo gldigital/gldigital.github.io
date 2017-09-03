@@ -5,138 +5,62 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Crystal Game</title>
+        <title>Trivia Game</title>
 
         <!-- Bootstrap CSS -->
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-        <link rel="stylesheet" href="assets/style.css">
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-        <!-- Jquery -->
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="  crossorigin="anonymous"></script>
+         <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/style.css">  
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
     </head>
     <body>
+
         
-    
-    <nav class="navbar navbar-default" role="navigation">
-         <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Crystal Game</a>
-            </div>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#rules">Rules</a></li>
-                    <li><a class="New-Game" href="#">New Game</a></li>
-                </ul>
-         </div>
-    </nav>
-
-    <div class="container">
-
-        <!-- Panels for Number to guess and user score -->
-        <div class="row">
-            <div class="col-md-6">
-                <div class="panel panel-danger">
-                      <div class="panel-heading">
-                            <h3 class="panel-title text-center">Number To Guess</h3>
-                      </div>
-                      <div class="panel-body text-center">
-                           <span id="number-to-guess"></span>
-                      </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                    <div class="panel panel-danger">
-                          <div class="panel-heading">
-                                <h3 class="panel-title text-center">Your Amount</h3>
-                          </div>
-                          <div class="panel-body text-center">
-                                <span id="userTotal"></span>
-                          </div>
-                    </div>
-                </div>
-        </div>
-
-        <!-- Layout crystals -->
-        <div class="row">
-                <div id="crystals">
-            <!-- Please disregard for class. Plan on practicing with this later this weekend -->
-            <!-- <div class="col-md-3">
-                <img class="crystal-image1" id="crystals" src="assets/img/crystal.png" alt="">
-            </div>
-            <div class="col-md-3">
-                <img class="crystal-image2" src="assets/img/crystal.png" alt="">
-             </div>
-             <div class="col-md-3">
-                <img class="crystal-image3" src="assets/img/crystal.png" alt="">
-            </div>
-            <div class="col-md-3">
-                <img class="crystal-image4" src="assets/img/crystal.png" alt=""> -->
+        <div class="jumbotron">
+            <div class="container-fluid">
+                <h1 id="welcome">Welcome to <span id="guessYear">"Guess The Year"</span> Trivia!</h1>
+                <h1 id="timerDisplay">Time Left: <span id="timer"></span></h1>
             </div>
         </div>
-
-        <!-- Panels to keep track of wins and losses -->
-        <div class="row">
-            <div class="col-md-6">
-                <div class="panel panel-danger">
-                    <div class="panel-heading">
-                        <h3 class="panel-title text-center">Wins</h3>
-                    </div>
-                    <div class="panel-body text-center">
-                            <span id="userWins"></span>
-                    </div>
-                </div>
-            </div>  
-            <div class="col-md-6">  
-                <div class="panel panel-danger">
-                    <div class="panel-heading">
-                        <h3 class="panel-title text-center">Losses</h3>
-                    </div>
-                    <div class="panel-body text-center">
-                        <span id="userLoses"></span>
-                    </div>
-                </div>
-            </div>    
-        </div>
-    </div>
-
-    <!-- Rules Section -->
-    <div class="container-fluid">
-        <div class="theRules" id="rules">
-            <h1>The Rules</h1>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <div class="refImg">
-                    <img src="https://image.flaticon.com/icons/svg/26/26708.svg" alt="">
-                </div>
+        <!-- Start button and instructions -->
+        <div class="container">
+            <div class="row startBG text-center startButton">
+                <h2>Thanks for coming to play!</h2>
+                <p>You will be given 3 events that happened in a specific year, and it's your objective to guess the correct year.</p>
+                <p>Your goal is to guess as many trivia questions as possible. Depending on how many you guess, you might get a "GIF"</p>
+                <p>GOOD LUCK!</p>
+                    <button type="button" class="btn btn-primary">Start Game</button>
             </div>
-            <div class="col-md-6">
-                <h2>How To Play</h2>
-                <hr>
-                <div class="list-group">
-                    <a class="list-group-item"><i class="fa fa-check-square fa-lg" aria-hidden="true"></i>You will be given a random number at the beginning of the game.</a>
-                    <a class="list-group-item"><i class="fa fa-check-square fa-lg" aria-hidden="true"></i>There are 4 crystals above. By clicking on a crystal you will be adding a specific amount of points to your total score.</a>
-                    <a class="list-group-item"><i class="fa fa-check-square fa-lg" aria-hidden="true"></i>You win the game by matching your total score to the random number chosen. You lose the game if your score goes above the random number chosen.</a>                    
-                    <a class="list-group-item"><i class="fa fa-check-square fa-lg" aria-hidden="true"></i>Each time a new game starts, each crystal will have a different value.</a>
+                <!-- Start game -->
+                <div class="startGame">
+                    <div class="quizContainer">
+                        <div class="col-md-12-fluid">
+                                <div class="question"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul class="choiceList"></ul>
+                            </div>
+                            <div class="col-md-6">
+                                <span id="theGif"></span>
+                            </div>
+                        </div>
+                        <div class="nextButton">Next Question</div>
+                        <div class="result"></div>
+                        <div class="quizMessage"></div>
+                        
+                        <br>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-        <!-- JAVASCRIPT  -->
-        <!-- ========================================= -->
-        <script src="assets/game.js"></script>
-        <!-- jQuery -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        
+        <!-- Logic js file -->
+        <script src="js/logic.js"></script>
         <!-- Bootstrap JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
     </body>
 </html>
