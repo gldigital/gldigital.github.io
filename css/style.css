@@ -1,142 +1,306 @@
-@import url(http://fonts.googleapis.com/css?family=Raleway);
-@import url(http://fonts.googleapis.com/css?family=Lato);
+/* Global */
 
 body {
-    background-image: url("https://ichef.bbci.co.uk/news/976/cpsprodpb/40DD/production/_93050661_1024-pubcollection-103.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-h1 {
-   font-family:'Lato', serif;
-   text-align: center;
-   font-weight: bold;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
 }
 
-p {
-    font-size: 16px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
 }
-
-.jumbotron {
-    background: rgba(241, 243, 241, 0.65);
+h1 {
+    font-size: 60px;
+    padding: 20px 10px;
 }
-
-.jumbotron h1 {
-    color: #3A3E3b);
-}
-ul {
-   list-style: none;
-}
-li {
-   font-family:'Raleway', serif;
-   font-size: 20px;
-   color: #EA4E5B;
-}
-input[type=radio] {
-   border: 0px;
-   width: 20px;
-   height: 15px;
-   display: inline-block;
-}
-
-input[type=checkbox], input[type=radio] {
-    margin: 20px 0px;
-    
-}
-p {
-   font-family:'Raleway', serif;
-}
-/* Quiz Classes */
-.quizContainer {
-   background-color: rgb(245, 251, 246);
-   border-radius: 6px;
-   width: 85%;
-   margin: auto;
-   position: relative;
-}
-.nextButton {
-   box-shadow: 3px 3px 5px #888;
-   border-radius: 6px;
-   width: 150px;
-   height: 40px;
-   text-align: center;
-   background-color: #3A3E3B;
-   /*clear: both;*/
-   color: rgb(245, 251, 246);
-   font-family:'Raleway', serif;
-   position: relative;
-   margin: 0px auto;
-   padding-top: 10px;
-}
-
-.nextButton:hover {
-    background: rgba(58, 62, 59, 0.95);
-}
-.question {
-   font-family:'Lato', serif;
-   font-weight: light;
-   font-size: 21px;
-   height: auto;
-   margin: auto;
-   background-color: #3A3E3B;
-   text-align: left;
-   color: rgb(245, 251, 246);
-   padding: 15px 40px;
-}
-.quizMessage {
-   background-color: rgb(245, 251, 246);
-   border: 1px solid #24ACB4;
-   width: 30%;
-   margin: 10px auto;
-   text-align: center;
-   padding: 2px;
-   font-family:'Raleway', serif;
-   color: #24ACB4;
-}
-.choiceList {
-   font-family: Courier, serif;
-   color: blueviolet;
-}
-.result {
-   background-color: rgb(245, 251, 246);
-   color: red;
-   padding: 10px 10px;
-   width: 30%;
-   height: auto;
-   border-radius: 6px;
-   margin: auto;
-   text-align: center;
-   font-family:'Raleway', serif;
-}
-
-#guessYear {
-    color:#177479
-}
-
-.startBG {
-    background: rgba(241, 243, 241, 0.65);
-    margin: 20px 10px;
-    padding: 20px 20px;
-}
-
-.btn-primary {
-    background: #177479;
-    font-size: 20px;
-}
-
-.btn-primary:hover {
-    background: #115A5E;
-    font-size: 20px;
-}
-.colorbg {
-    background: red;
-}
-
-#theImg {
-    max-width: 90%;
-    height: auto;
-    margin: 10px auto;
+h3 {
+    text-align: center;
     padding: 10px 10px;
 }
-/* End of Quiz Classes */
 
+p {
+    padding: 5px 0px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px 0px 0px 10px;
+  }
+
+section {
+    margin: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+li {
+    float: left;
+    padding: 10px 10px 10px 0px;
+    
+}
+i {
+    padding-right: 5px;
+    font-size: 3em;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.btn-light {
+    margin: 20px 0px 30px 0px;
+    display: inline-block;
+    padding: 15px 15px;
+    background: rgba(255, 255, 255, 0.35);
+    color: #000;
+    border: 2px solid #D0CCCC;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.btn-light:hover {
+    background: #fff;
+    color: #333;
+}
+
+.btn-dark {
+    margin: 0px 0px 30px 0px auto;
+    display: block;
+    padding: 10px 100px;
+    background: rgba(28, 28, 28, 0.5);
+    color: #E4DFDF;
+    border: 2px solid rgba(28, 28, 28, .6);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+.btn-dark:hover {
+    background: rgba(28, 28, 28, 0.8);
+    color: #FFF;
+    border: 2px solid rgba(28, 28, 28, .8);
+}
+
+
+/* ================================================================== */
+
+/* header */
+.navbar {
+    margin-bottom: 0px;
+}
+
+/* ================================================================== */
+
+/* hero section */
+ #heroSection {
+    background: url("C:/Users/Greg/desktop/bootcamp/glDigital/img/home/heroIMG.jpeg");
+    width: 100%;
+    min-height: 920px;
+    background-repeat: no-repeat;
+} 
+
+#heroSection h1 {
+    font-size: 100px;
+    line-height: 1.5;
+    text-align: center; 
+}
+
+#heroSection p {
+    text-align: center;
+    font-size: 22px;
+    line-height: 1.5;
+    padding-bottom: 20px;
+}
+
+.heroBtn {
+    background-color: transparent;
+    margin: 15px 20px 10px 20px;
+    color: #000;
+    border: 1px solid #000;
+}
+
+
+/* ================================================================== */
+/* Featured Section */
+
+#featuredSection {
+    margin: 0px auto;
+    padding: 30px 0px;
+    min-height: 600px;
+    background: url("https://ak5.picdn.net/shutterstock/videos/16580857/thumb/1.jpg");
+
+}
+
+.mainFeatured {
+    margin: 20px auto;
+    padding: 30px 0px 40px 0px;
+    color: #D0CCCC;
+}
+.jsIcon {
+    font-size: 4em;
+    margin-top: -10px;
+    position: relative;
+    top: -13px;
+}
+
+.jqIcon {
+    position: relative;
+    right: 7px;
+}
+
+.iHover:hover {
+    color: #fff;
+}
+/* ================================================================== */
+/* Portfolio */
+
+#portfolio {
+    background-image: url("C:/Users/Greg/desktop/bootcamp/glDigital/img/home/home3.jpg");
+    min-height: 880px;
+    
+}
+
+.portSection {
+    color: #F1ECEC;
+}
+
+.bg {
+    background: rgba(28, 28, 28, 0.4);
+    border: 1px solid rgba(28, 28, 28, 0.4);
+    border-radius: 2px;
+    padding: 20px 10px;
+}
+
+/* icons */
+img.portIcon {
+    width: auto;
+    height: 250px;
+    margin: 20px auto;
+    padding: 10px 0px;
+    vertical-align: middle;
+    filter: grayscale();
+}
+
+img.portIcon:hover {
+    filter: none;
+}
+
+#crystal {
+    opacity: .8;
+}
+#crystal:hover {
+    filter:drop-shadow(8px 8px 10px red);
+    opacity: 1;
+}
+
+.iHoverDark:hover {
+    color: #D5CFCF;
+}
+
+img.animated-gif{
+    width: 100%;
+  }
+
+/* ================================================================== */
+/* Contact Section */
+
+#connectSection {
+    background-image: url("http://www.gl-digital.com/wp-content/uploads/2015/05/home-testimonial-bg.jpg");
+    min-height: 600px;
+    widows: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center top;
+    color: #D5CFCF;
+    
+}
+
+a .fa-envelope, .fa-linkedin-square {
+    font-size: 40px !important;
+    padding: 10px 10px;
+    color: #D5CFCF;
+}
+
+.fa-envelope:hover, .fa-linkedin-square:hover {
+    color: rgba(221, 220, 220, 0.61);;
+}
+
+.fa-envelope:hover, .fa-linkedin-square:hover {
+    color: rgba(221, 220, 220, 0.61);;
+}
+
+.connectBG {
+    background: rgba(28, 28, 28, 0.5);
+    margin-top: 40px;
+    padding: 30px 10px;
+}
+/* ================================================================== */
+/* media queries */
+
+@media all and (min-width: 960px) {
+   #heroSection h1{
+        font-size: 100px;
+    }
+}
+ 
+@media all and (max-width: 959px) and (min-width: 600px) {
+    #heroSection h1{
+        font-size: 60px;
+    }
+}
+ 
+@media all and (max-width: 599px) and (min-width: 320px) {
+    #heroSection h1{
+        font-size: 60px;
+        
+    }
+ 
+}
+
+@media all and (min-width: 960px) {
+    #heroSection p{
+         font-size: 22px;
+         text-align: left;
+     }
+ }
+  
+ @media all and (max-width: 959px) and (min-width: 600px) {
+     #heroSection p{
+         font-size: 22px;
+         text-align: left;
+     }
+ }
+  
+ @media all and (max-width: 599px) and (min-width: 320px) {
+     #heroSection p{
+         font-size: 22px;
+         text-align: left;
+     }
+  
+ }
+  
+ @media all and (max-width: 768px) and (min-width: 600px) {
+     #heroSection {
+        background-image: none;
+        background: #ccc;
+     }
+ }
+  
+ @media all and (max-width: 599px) and (min-width: 320px) {
+     #heroSection {
+        background-image: none;
+        background: #ccc;
+     }
+  
+ }

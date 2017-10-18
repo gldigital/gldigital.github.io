@@ -1,66 +1,363 @@
-
 <!DOCTYPE html>
 <html lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Trivia Game</title>
 
-        <!-- Bootstrap CSS -->
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-         <!-- Custom CSS -->
-        <link rel="stylesheet" href="css/style.css">  
-        <!-- jQuery -->
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Greg's Portfolio Website</title>
 
-    </head>
-    <body>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Linking style css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- adding jquery link -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <!-- Adding Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <!-- Font Awesome & Font MFizz-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.css">
 
-        
-        <div class="jumbotron">
-            <div class="container-fluid">
-                <h1 id="welcome">Welcome to <span id="guessYear">"Guess The Year"</span> Trivia!</h1>
-                <h1 id="timerDisplay">Time Left: <span id="timer"></span></h1>
-            </div>
-        </div>
-        <!-- Start button and instructions -->
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
         <div class="container">
-            <div class="row startBG text-center startButton">
-                <h2>Thanks for coming to play!</h2>
-                <p>You will be given 3 events that happened in a specific year, and it's your objective to guess the correct year.</p>
-                <p>Your goal is to guess as many trivia questions as possible. Depending on how many you guess, you might get a "GIF"</p>
-                <p>GOOD LUCK!</p>
-                    <button type="button" class="btn btn-primary">Start Game</button>
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand smooth-scroll" href="#heroSection">(Greg Ladden)</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#featuredSection" class="smooth-scroll">Featured Project</a>
+                </li>
+                <li>
+                    <a href="#portfolio" class="smooth-scroll">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#aboutSection" class="smooth-scroll">About</a>
+                </li>
+                <li>
+                    <a href="#connectSection" class="smooth-scroll">Let's Connect</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    </nav>
+
+
+    <!-- hero section -->
+    <section id="heroSection">
+        <div class="container">
+            <div class="col-md-12 col-sm-12">
+                <h1>No Pain No Gain</h1>
+                <p>The digital world can be a pain. Lucky for you, I specialize in eliminating pain points in the digital space!
+                    Whether it's web design or app developemnt, I have your back.</p>
+                <div class="text-center">
+                    <a href="#portfolio" class="btn btn-primary btn-lg heroBtn smooth-scroll">View Portfolio</a>
+                    <a href="#connectSection" class="btn btn-primary btn-lg heroBtn smooth-scroll">Let's Connect</a>
+                </div>
             </div>
-                <!-- Start game -->
-                <div class="startGame">
-                    <div class="quizContainer">
-                        <div class="col-md-12-fluid">
-                                <div class="question"></div>
+
+        </div>
+    </section>
+
+    <!-- Featured Project section -->
+    <section id="featuredSection">
+        <div class="container">
+            <div class="row">
+                <div class="mainFeatured">
+                    <div class="col-md-6">
+                        <h2>Featured Project</h2>
+                        <p>Have you ever left your house without an umbrella and realized later it was going to rain? Of course,
+                            you did! Why? Becuase you did not use our app, "What to Weather"! This app suggests what to wear
+                            based on the weather conditions. WTW uses the Open Weather API and the eBay API. In this group
+                            project, I lead the UI/UX and Weather API functionality.
+                        </p>
+                        <p>
+                            <strong>Skills Used:</strong>
+                        </p>
+                        <div class="clearfix">
+                            <ul>
+                                <li>
+                                    <i class="icon-html5-alt iHover " data-toggle="tooltip" data-placement="bottom" title="HTML5"></i>
+                                </li>
+                                <li>
+                                    <i class="icon-css3-alt iHover " data-toggle="tooltip" data-placement="bottom" title="CSS3"></i>
+                                </li>
+                                <li>
+                                    <i class="icon-bootstrap iHover " data-toggle="tooltip" data-placement="bottom" title="Bootstrap"></i>
+                                </li>
+                                <li>
+                                    <i class="icon-javascript-alt jsIcon iHover " data-toggle="tooltip" data-placement="bottom"
+                                        title="Javascript"></i>
+                                </li>
+                                <li>
+                                    <i class="icon-jquery jqIcon iHover " data-toggle="tooltip" data-placement="bottom" title="Jquery"></i>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <ul class="choiceList"></ul>
-                            </div>
-                            <div class="col-md-6">
-                                <span id="theGif"></span>
-                            </div>
-                        </div>
-                        <div class="nextButton">Next Question</div>
-                        <div class="result"></div>
-                        <div class="quizMessage"></div>
-                        
-                        <br>
+
+                        <a href="https://anjunha93.github.io/what-to-weather/" class="btn btn-light center-block" target="_blank">What Should I Wear Today?</a>
+
+                    </div>
+                    <div class="col-md-6">
+                        <img class="img-responsive animated-gif" src="https://media.giphy.com/media/3o8dFn38rcJuYAoX4s/giphy.gif" alt="trivia game">
                     </div>
                 </div>
             </div>
         </div>
-        
-        <!-- Logic js file -->
-        <script src="js/logic.js"></script>
-        <!-- Bootstrap JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </section>
 
-    </body>
+    <!-- portfolio section -->
+    <section id="portfolio">
+        <div class="container">
+            <h1 class="text-center">Portfolio</h1>
+            <!-- beginning of row 2 -->
+            <div class="row">
+                <div class="portSection">
+                    <div class="col-md-4 bg">
+                        <img class="portIcon img-responsive img-circle" src="https://bumpreveal.com/wp-content/uploads/2017/04/gender-reveal-teams.jpg"
+                            alt="nfl logo for hangman game" />
+                        <h3>Baby Reveal</h3>
+                        <p>Check out this program I built for our baby reveal. Built for all device types</p>
+                        <div class="clearfix">
+                            <ul>
+                                <li>
+                                    <i class="icon-html5-alt iHoverDark " data-toggle="tooltip" data-placement="bottom" title="HTML5"></i>
+                                </li>
+                                <li>
+                                    <i class="icon-css3-alt iHoverDark " data-toggle="tooltip" data-placement="bottom" title="CSS3"></i>
+                                </li>
+                                <li>
+                                    <i class="icon-bootstrap iHoverDark " data-toggle="tooltip" data-placement="bottom" title="Bootstrap"></i>
+                                </li>
+                                <li>
+                                    <i class="icon-javascript-alt jsIcon iHoverDark " data-toggle="tooltip" data-placement="bottom"
+                                        title="Javascript"></i>
+                                </li>
+                                <li>
+                                    <i class="icon-jquery jqIcon iHoverDark " data-toggle="tooltip" data-placement="bottom" title="Jquery"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="https://gldigital.github.io/new-addition/" class="btn btn-dark" role="buton" target="_blank">Boy or Girl?</a>
+                    </div>
+
+                    <div class="col-md-4 bg">
+                        <img class="portIcon animated-gif img-responsive" src="https://media.giphy.com/media/l41YlHs99JsSptZf2/giphy.gif" id="crystal" alt="gif icon">
+                        <h3>Favorite Athlete Gifs</h3>
+                        <p>Use this app, using AJAX, to search your favorite athlete gifs! </p>
+                        <div class="clearfix">
+                            <ul>
+                                <li>
+                                    <i class="icon-html5-alt iHoverDark " data-toggle="tooltip" data-placement="bottom" title="HTML5"></i>
+                                </li>
+                                <li>
+                                    <i class="icon-css3-alt iHoverDark " data-toggle="tooltip" data-placement="bottom" title="CSS3"></i>
+                                </li>
+                                <li>
+                                    <i class="icon-bootstrap iHoverDark " data-toggle="tooltip" data-placement="bottom" title="Bootstrap"></i>
+                                </li>
+                                <li>
+                                    <i class="icon-javascript-alt jsIcon iHoverDark " data-toggle="tooltip" data-placement="bottom"
+                                        title="Javascript"></i>
+                                </li>
+                                <li>
+                                    <i class="icon-jquery jqIcon iHoverDark " data-toggle="tooltip" data-placement="bottom" title="Jquery"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="https://gldigital.github.io/giphy/" class="btn btn-dark center-block" target="_blank">Let's Search</a>
+                    </div>
+
+                    <div class="col-md-4 bg">
+                        <img class="portIcon img-responsive img-circle" src="http://www.dancingbeewinery.com/product_images/uploaded_images/trivia-night.png"
+                            alt="lottery image for lottery program" />
+                        <h3>Trivia game</h3>
+                        <p>Enjoy a game of "Guess The Year" trivia. You will have 30 seconds to guess 5 questions. Good luck!</p>
+                        <div class="clearfix">
+                            <ul>
+                                <li>
+                                    <i class="icon-html5-alt iHoverDark " data-toggle="tooltip" data-placement="bottom" title="HTML5"></i>
+                                </li>
+                                <li>
+                                    <i class="icon-css3-alt iHoverDark " data-toggle="tooltip" data-placement="bottom" title="CSS3"></i>
+                                </li>
+                                <li>
+                                    <i class="icon-bootstrap iHoverDark " data-toggle="tooltip" data-placement="bottom" title="Bootstrap"></i>
+                                </li>
+                                <li>
+                                    <i class="icon-javascript-alt jsIcon iHoverDark " data-toggle="tooltip" data-placement="bottom"
+                                        title="Javascript"></i>
+                                </li>
+                                <li>
+                                    <i class="icon-jquery jqIcon iHoverDark " data-toggle="tooltip" data-placement="bottom" title="Jquery"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="https://gldigital.github.io/triviaGame/" class="btn btn-dark center-block" target="_blank">Play Game</a>
+
+                    </div>
+                </div>
+            </div>
+            <!-- beginning of row 2 -->
+            <div class="row">
+                <div class="portSection">
+                    <div class="col-md-4 bg">
+                        <img class="portIcon img-responsive img-circle" src="https://usatftw.files.wordpress.com/2014/10/nfl_logo_new2.jpg?w=1000&h=750"
+                            alt="nfl logo for hangman game" />
+                        <h3>NFL Hangman</h3>
+                        <p>Play the classic Hangman game with a 2017 NFL team theme!</p>
+                        <div class="clearfix">
+                            <ul>
+                                <li>
+                                    <i class="icon-html5-alt iHoverDark " data-toggle="tooltip" data-placement="bottom" title="HTML5"></i>
+                                </li>
+                                <li>
+                                    <i class="icon-css3-alt iHoverDark " data-toggle="tooltip" data-placement="bottom" title="CSS3"></i>
+                                </li>
+                                <li>
+                                    <i class="icon-bootstrap iHoverDark " data-toggle="tooltip" data-placement="bottom" title="Bootstrap"></i>
+                                </li>
+                                <li>
+                                    <i class="icon-javascript-alt jsIcon iHoverDark " data-toggle="tooltip" data-placement="bottom"
+                                        title="Javascript"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="https://gldigital.github.io/Hangman-Game/" class="btn btn-dark center-block" target="_blank">Play Game</a>
+                    </div>
+
+                    <div class="col-md-4 bg">
+                        <img class="portIcon img-responsive" src="img/home/crystal2.png" id="crystal" alt="crystal icon for crystal game">
+                        <h3>Crystal Game</h3>
+                        <p>Have fun playing my Crystal game all while you sharpen your memory!</p>
+                        <div class="clearfix">
+                            <ul>
+                                <li>
+                                    <i class="icon-html5-alt iHoverDark " data-toggle="tooltip" data-placement="bottom" title="HTML5"></i>
+                                </li>
+                                <li>
+                                    <i class="icon-css3-alt iHoverDark " data-toggle="tooltip" data-placement="bottom" title="CSS3"></i>
+                                </li>
+                                <li>
+                                    <i class="icon-bootstrap iHoverDark " data-toggle="tooltip" data-placement="bottom" title="Bootstrap"></i>
+                                </li>
+                                <li>
+                                    <i class="icon-javascript-alt jsIcon iHoverDark " data-toggle="tooltip" data-placement="bottom"
+                                        title="Javascript"></i>
+                                </li>
+                                <li>
+                                    <i class="icon-jquery jqIcon iHoverDark " data-toggle="tooltip" data-placement="bottom" title="Jquery"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="https://gldigital.github.io/Crystal-Game/" class="btn btn-dark center-block" target="_blank">Play Game</a>
+                    </div>
+
+                    <div class="col-md-4 bg">
+                        <img class="portIcon img-responsive img-circle" src="http://cdn.wallpapersafari.com/74/89/XPbgAI.jpeg"
+                            alt="lottery image for lottery program" />
+                        <h3>Train Scheduler</h3>
+                        <p>Keep track of your train schedule. Don't see yours in there? No sweat, you can add your own.</p>
+                        <div class="clearfix">
+                            <ul>
+                                <li>
+                                    <i class="icon-html5-alt iHoverDark " data-toggle="tooltip" data-placement="bottom" title="HTML5"></i>
+                                </li>
+                                <li>
+                                    <i class="icon-css3-alt iHoverDark " data-toggle="tooltip" data-placement="bottom" title="CSS3"></i>
+                                </li>
+                                <li>
+                                    <i class="icon-bootstrap iHoverDark " data-toggle="tooltip" data-placement="bottom" title="Bootstrap"></i>
+                                </li>
+                                <li>
+                                    <i class="icon-javascript-alt jsIcon iHoverDark " data-toggle="tooltip" data-placement="bottom"
+                                        title="Javascript"></i>
+                                </li>
+                                <li>
+                                    <i class="icon-jquery jqIcon iHoverDark " data-toggle="tooltip" data-placement="bottom" title="Jquery"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="https://gldigital.github.io/train-time/" class="btn btn-dark center-block" target="_blank">Check Time</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Other Skills
+        <section id="otherSkills">
+            <div class="container">
+                <h1>other skill sets</h1>
+            </div>
+        </section> -->
+
+
+    <!-- About Section -->
+    <section>
+        <div class="container" id="aboutSection">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>About section</h1>
+                    <p> I am Front End Web Developer with a robust knowledge in web development. Highly, proficient creating
+                        UI/UX design with HTML, CSS, JS, Jquery, AJAX, and JSON. My Web Project Management background has
+                        fueled my desire to become a Front End Web Developer. Web Development is a critical plateau for me
+                        to expand my knowledge of programming languages and protocols to create user-friendly web applications.</p>
+                </div>
+            </div>
+            <br>
+            <hr>
+        </div>
+    </section>
+
+    <!-- Connect Section-->
+    <footer>
+        <div class="container-fluid" id="connectSection">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="connectBG">
+                            <h2>Let's Connect</h2>
+                            <p>
+                                <span>
+                                    <a href="mailto:greg@gl-digital.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                                </span>
+                                <span>
+                                    <a href="https://www.linkedin.com/in/gregladden/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                                </span>
+                            </p>   
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- link js files -->
+    <script src="js/logic.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+
 </html>
