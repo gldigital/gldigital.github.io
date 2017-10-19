@@ -104,7 +104,7 @@ i {
 
 /* hero section */
  #heroSection {
-    background: url(CSS/heroIMG.jpeg");
+    background: url(/heroIMG.jpeg");
     width: 100%;
     min-height: 920px;
     background-repeat: no-repeat;
