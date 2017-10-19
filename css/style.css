@@ -104,7 +104,7 @@ i {
 
 /* hero section */
  #heroSection {
-    background: url("C:/Users/Greg/desktop/bootcamp/glDigital/img/home/heroIMG.jpeg");
+    background: url(CSS/heroIMG.jpeg");
     width: 100%;
     min-height: 920px;
     background-repeat: no-repeat;
