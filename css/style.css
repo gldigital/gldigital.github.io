@@ -47,7 +47,7 @@ li {
 }
 i {
     padding-right: 5px;
-    font-size: 3em;
+    font-size: 2.5em;
 }
 
 .clearfix::after {
@@ -104,7 +104,7 @@ i {
 
 /* hero section */
  #heroSection {
-    background: url("https://gldigital.github.io/img/home/heroIMG.jpeg");
+    background: url("/img/home/heroIMG.jpeg");
     width: 100%;
     min-height: 920px;
     background-repeat: no-repeat;
@@ -149,7 +149,7 @@ i {
     color: #D0CCCC;
 }
 .jsIcon {
-    font-size: 4em;
+    font-size: 3.5em;
     margin-top: -10px;
     position: relative;
     top: -13px;
@@ -211,7 +211,14 @@ img.portIcon:hover {
 
 img.animated-gif{
     width: 100%;
+    margin: 21.2px 0px;
+    padding: 10px 0px;
+    filter: grayscale();
   }
+
+img.animated-gif:hover {
+    filter: none;
+}
 
 /* ================================================================== */
 /* Contact Section */
