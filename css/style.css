@@ -232,6 +232,17 @@ img.animated-gif{
 img.animated-gif:hover {
     filter: none;
 }
+/* ================================================================== */
+/* About Section */
+
+.aboutSection {
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.aboutImg {
+    margin-top: 30px;
+}
 
 /* ================================================================== */
 /* Contact Section */
