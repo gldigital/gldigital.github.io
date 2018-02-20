@@ -104,7 +104,7 @@ i {
 
 /* hero section */
  #heroSection {
-    background: url("/img/home/heroIMG.jpeg");
+    background: url("../../img/home/heroIMG.jpeg");
     width: 100%;
     min-height: 920px;
     background-repeat: no-repeat;
@@ -139,7 +139,7 @@ i {
     margin: 0px auto;
     padding: 30px 0px;
     min-height: 600px;
-    background: url("https://ak5.picdn.net/shutterstock/videos/16580857/thumb/1.jpg");
+    background: url("../img/home/ep_naturalblack.png");
 
 }
 
@@ -147,6 +147,12 @@ i {
     margin: 20px auto;
     padding: 30px 0px 40px 0px;
     color: #D0CCCC;
+}
+.icon-mongodb:before{
+    margin-left: -10px;
+}
+.icon-nodejs:before {
+    margin-left: 10px;
 }
 .jsIcon {
     font-size: 3.5em;
@@ -181,6 +187,7 @@ i {
     border: 1px solid rgba(28, 28, 28, 0.4);
     border-radius: 2px;
     padding: 20px 10px;
+    min-height: 650px;
 }
 
 /* icons */
@@ -191,6 +198,12 @@ img.portIcon {
     padding: 10px 0px;
     vertical-align: middle;
     filter: grayscale();
+}
+
+.oprahNode {
+    font-size: 50px;
+    position: relative;
+    bottom: 5px;
 }
 
 img.portIcon:hover {
@@ -224,27 +237,23 @@ img.animated-gif:hover {
 /* Contact Section */
 
 #connectSection {
-    background-image: url("http://www.gl-digital.com/wp-content/uploads/2015/05/home-testimonial-bg.jpg");
+    background-image: url("https://avada.theme-fusion.com/gym/wp-content/uploads/sites/9/2015/05/home-testimonial-bg.jpg");
     min-height: 600px;
-    widows: 100%;
+    width: 100%;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-position: center top;
     color: #D5CFCF;
     
 }
 
-a .fa-envelope, .fa-linkedin-square {
-    font-size: 40px !important;
-    padding: 10px 10px;
+.contactIcons {
+    font-size: 70px !important;
+    padding: 5px 5px;
     color: #D5CFCF;
 }
 
-.fa-envelope:hover, .fa-linkedin-square:hover {
-    color: rgba(221, 220, 220, 0.61);;
-}
-
-.fa-envelope:hover, .fa-linkedin-square:hover {
+.contactIcons:hover{
     color: rgba(221, 220, 220, 0.61);;
 }
 
